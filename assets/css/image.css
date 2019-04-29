@@ -1,0 +1,16 @@
+#image p{
+	background: url(../images/icons.png) no-repeat;
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+}
+
+#image #image1{
+	background-position: 0 0;
+}
+
+#image #image2{
+	background-position: -60px 0;
+}

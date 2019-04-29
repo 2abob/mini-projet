@@ -1,0 +1,19 @@
+Options +FollowSymLinks
+
+RewriteEngine On
+
+#RewriteBase /
+
+RewriteRule ^catalogue-([_a-z0-9]*)-([_a-z0-9]*).html index.php?c=catalogue&m=listeMaison&type=$1&offset=$2 [L]
+
+RewriteRule ^maintenance.html index.php?c=backOffice [L]
+
+RewriteRule ^maintenance-ajouter.html index.php?c=backOffice&m=ajouterMaison [L]
+
+RewriteRule ^maintenance-supprimer.html index.php?c=backOffice&m=supprimerMaison [L]
+
+RewriteRule ^maintenance-modifier.html index.php?c=backOffice&m=modifierMaison [L]
+
+RewriteRule ^recherche-([_a-z0-9]*).html index.php?c=catalogue&m=rechercheIndexer&offset=$1 [L]
+
+RewriteRule ^recherche-([_a-z0-9]*)-([_a-z0-9]*).html index.php?c=catalogue&m=rechercheIndexer2&offset=$1&key=$2 [L]
