@@ -8,8 +8,8 @@
 				<ul>
 					<?php foreach($maison as $tmp) { ?>
 					<li>
-						<a href="gallery-single.html" class="figure"><img src="<?php echo base_url("assets/images/".$tmp["IMAGE"]) ?>" alt="<?php echo $tmp["TITLE"]?>" title="<?php echo $tmp["TITLE"]?>" ></a>
-						<h4><a href="gallery-single.html"><?php echo $tmp["TITLE"] ?></a></h4>
+						<a href="<?php echo base_url("fichemaison-".$tmp["IDMAISON"]."-".$type2."-".$CUR.".html") ?>" class="figure"><img src="<?php echo base_url("assets/images/".$tmp["IMAGE"]) ?>" alt="<?php echo $tmp["TITLE"]?>" title="<?php echo $tmp["TITLE"]?>" ></a>
+						<h4><a href="<?php echo base_url("fichemaison-".$tmp["IDMAISON"]."-".$type2."-".$CUR.".html") ?>"><?php echo $tmp["TITLE"] ?></a></h4>
 						<p>
 							type : <?php echo $tmp["TYPE"] ?>
 						</p>

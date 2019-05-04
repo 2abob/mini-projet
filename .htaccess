@@ -6,13 +6,35 @@ RewriteEngine On
 
 RewriteRule ^catalogue-([_a-z0-9]*)-([_a-z0-9]*).html index.php?c=catalogue&m=listeMaison&type=$1&offset=$2 [L]
 
+RewriteRule ^fichemaison-([_a-z0-9]*)-([_a-z0-9]*)-([_a-z0-9]*).html index.php?c=catalogue&m=ficheMaison&id=$1&type=$2&offset=$3 [L]
+
+RewriteRule ^connection.html index.php?c=backOffice&m=connection [L]
+
+RewriteRule ^verification.html index.php?c=backOffice&m=verifier [L]
+
+RewriteRule ^deconnection.html index.php?c=backOffice&m=deconnecter [L]
+
 RewriteRule ^maintenance.html index.php?c=backOffice [L]
 
 RewriteRule ^maintenance-ajouter.html index.php?c=backOffice&m=ajouterMaison [L]
 
-RewriteRule ^maintenance-supprimer.html index.php?c=backOffice&m=supprimerMaison [L]
+RewriteRule ^maintenance-supprimer-([_a-z0-9]*).html index.php?c=backOffice&m=supprimerMaison&offset=$1 [L]
 
-RewriteRule ^maintenance-modifier.html index.php?c=backOffice&m=modifierMaison [L]
+RewriteRule ^maintenance-supprimer2-([_a-z0-9]*).html index.php?c=backOffice&m=supprimer&id=$1 [L]
+
+RewriteRule ^maintenance-confirmer1-([_a-z0-9]*).html index.php?c=backOffice&m=confirmerSupprimer1&id=$1 [L]
+
+RewriteRule ^maintenance-modifier-([_a-z0-9]*).html index.php?c=backOffice&m=modifierMaison&offset=$1 [L]
+
+RewriteRule ^maintenance-modifier2-([_a-z0-9]*).html index.php?c=backOffice&m=modifierForm&id=$1 [L]
+
+RewriteRule ^maintenance-modifierimage-([_a-z0-9]*).html index.php?c=backOffice&m=modifierImageForm&id=$1 [L]
+
+RewriteRule ^maintenance-modifierimage2-([_a-z0-9]*).html index.php?c=backOffice&m=modifierImage&id=$1 [L]
+
+RewriteRule ^maintenance-modifier3-([_a-z0-9]*).html index.php?c=backOffice&m=modifier&id=$1 [L]
+
+RewriteRule ^maintenance-inserer.html index.php?c=backOffice&m=inserer [L]
 
 RewriteRule ^recherche-([_a-z0-9]*).html index.php?c=catalogue&m=rechercheIndexer&offset=$1 [L]
 

@@ -47,4 +47,17 @@ class Catalogue extends CI_Controller {
 		$this->load->view("templates/resultat", $data);
 		$this->load->view("templates/footer");
 	}
+
+	public function ficheMaison(){
+		$id = $this->input->get("id");
+		$this->load->model("maison");
+		$this->load->model("type");
+		$data["type"] = $this->type->getTypeMaison();
+		$data["maison"] = $this->maison->getMaisonByID($id);
+		$data["type2"] = $this->input->get("type");
+		$data["offset"] = $this->input->get("offset");
+		$this->load->view("templates/header", $data);
+		$this->load->view("templates/fiche");
+		$this->load->view("templates/footer");
+	}
 }

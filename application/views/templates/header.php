@@ -23,7 +23,7 @@
 					<a href="<?php echo base_url() ?>">accueil</a>
 				</li>
 				<li>
-					<a href="<?php echo base_url("catalogue-type-.html") ?>">type de maison</a>
+					<a href="<?php echo base_url("catalogue-type-1.html") ?>">type de maison</a>
 					<ul>
 						<?php foreach($type as $data){ ?>
 							<li>
@@ -31,9 +31,6 @@
 							</li>
 						<?php } ?>
 					</ul>
-				</li>
-				<li>
-					<a href="contact.html">contact</a>
 				</li>
 			</ul>
 		</div>

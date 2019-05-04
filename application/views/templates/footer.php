@@ -28,23 +28,6 @@
 					</li>
 				</ul>
 			</div>
-			<!--<div class="posts">
-				<h3>recent blog post</h3>
-				<ul>
-					<li>
-						<a href="#">Fusce Ut Massa Magna</a>
-					</li>
-					<li>
-						<a href="#">Quis Aliquam Justo</a>
-					</li>
-					<li>
-						<a href="#">In Hac Habitasse Platea</a>
-					</li>
-					<li>
-						<a href="#">Vestibulum Volutpat Turpis Eu Leo Eleifend Et Adipiscing </a>
-					</li>
-				</ul>
-			</div>-->
 			<div class="connect">
 				<h3>Retrouvez-nous</h3>
 				<p>
@@ -65,14 +48,14 @@
 		</div>
 		<div class="section">
 			<p>
-				copyright &copy; 2019 m. immobilier
+				copyright &copy; 2019 RASOLOFONIAINA RANTO P10A 43
 			</p>
 			<ul>
 				<li>
 					<a href="<?php echo base_url() ?>">accueil</a>
 				</li>
 				<li>
-					<a href="<?php echo base_url("catalogue-type.html") ?>">type de maison</a>
+					<a href="<?php echo base_url("catalogue-type-1.html") ?>">type de maison</a>
 				</li>
 				<li>
 					<a href="contact.html">contact</a>
